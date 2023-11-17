@@ -19,13 +19,9 @@ def generar_email():
 
     return email.upper()
 
-#Configurar para abrir con extension
-profile_path = r"C:\Users\QA-User118\AppData\Local\Google\Chrome\User Data\System Profile"
-# Ruta a la extensión de Chrome Xpath finder(archivo .crx o carpeta descomprimida)
-extension_path = r'C:\Users\QA-User118\Documents\drivers\ihnknokegkbpmofmafnkoadfjkhlogph-1.0.2-Crx4Chrome.com.crx'
-# Configurar opciones del navegador para instalar la extensión
+
 chrome_options = webdriver.ChromeOptions()
-chrome_options.add_extension(extension_path)
+
 
 #Abrir Navegador
 d = webdriver.Chrome(options=chrome_options)
